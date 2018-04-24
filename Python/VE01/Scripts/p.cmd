@@ -1,1 +1,0 @@
-python -i -c "from basic_ops import *\nprint(5)"

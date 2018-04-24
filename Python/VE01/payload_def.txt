@@ -1,4 +1,0 @@
-'''
-payload_def.py
-Defines basic enums and details required for payloads
-'''
