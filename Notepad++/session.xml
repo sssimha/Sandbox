@@ -1,0 +1,17 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="0" xOffset="62" scrollWidth="553" startPos="354" endPos="354" selMode="0" lang="Python" encoding="-1" filename="C:\Sandbox\Python\VE01\basic_ops.py" backupFilePath="" originalFileLastModifTimestamp="1524166642" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="48879" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="174" xOffset="0" scrollWidth="672" startPos="7249" endPos="7249" selMode="0" lang="Python" encoding="-1" filename="C:\Sandbox\Python\VE01\my_pyt.py" backupFilePath="" originalFileLastModifTimestamp="1524578607" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="371" startPos="0" endPos="0" selMode="0" lang="Python" encoding="-1" filename="C:\Sandbox\Python\VE01\payload_def.py" backupFilePath="" originalFileLastModifTimestamp="1524164776" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="45" xOffset="0" scrollWidth="651" startPos="5358" endPos="5358" selMode="0" lang="Python" encoding="-1" filename="C:\Sandbox\Python\VE01\payloads.py" backupFilePath="" originalFileLastModifTimestamp="1524511379" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-285211648" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Fold line="6" />
+                <Fold line="45" />
+                <Fold line="132" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="483" startPos="82" endPos="82" selMode="0" lang="Python" encoding="-1" filename="C:\Sandbox\Python\VE01\test1.py" backupFilePath="" originalFileLastModifTimestamp="1524253104" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="336" startPos="47" endPos="47" selMode="0" lang="Batch" encoding="-1" filename="C:\Sandbox\Python\VE01\Scripts\p.cmd" backupFilePath="" originalFileLastModifTimestamp="1524257053" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="74753136" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>
