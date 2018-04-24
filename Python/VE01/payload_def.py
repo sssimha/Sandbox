@@ -4,6 +4,7 @@ Defines basic enums and details required for payloads
 '''
 import enum
 
+
 class ParamLocation(enum.Enum):
     '''
     Class DOCSTRING: Enum for parameter inclusion
