@@ -6,6 +6,7 @@ Module DOCSTRING: Defines basic stuff used in general programming
 import importlib
 import pip
 import pip._internal
+import sys
 
 __var1 = 'test'
 # Import Reload shortcut
