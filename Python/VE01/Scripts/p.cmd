@@ -1,0 +1,1 @@
+@python -i -c "import basic_ops;exec('\n'.join([(name+'=basic_ops.'+name if (name[:2]!='__') else '' ) for name in basic_ops.__dict__]).lstrip()+'\n');print('Python '+sys.version+' on '+sys.platform)"
