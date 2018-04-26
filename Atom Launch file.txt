@@ -1,1 +1,1 @@
-C:\Windows\System32\cmd.exe /k "@echo off & c:\Sandbox\Python\VE01\Scripts\activate.bat & @echo Do Not Close This Window Please & start C:\Users\ssimha\AppData\Local\atom\app-1.26.0\atom.exe & exit"
+C:\Windows\System32\cmd.exe /k "@echo off & c:\Sandbox\Python\VE01\Scripts\activate.bat & colof 0f & @echo Do Not Close This Window Please & start C:\Users\ssimha\AppData\Local\atom\app-1.26.0\atom.exe & exit"
