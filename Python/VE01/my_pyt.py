@@ -112,10 +112,8 @@ def run_request(request_compl_dict):
         end_time = dt1.utcnow()
         req_resp_list.append((prepd_reqst, responses))
         req_ersp_timelog.append([start_time, end_time])
-        continue_loop = False
-        if responses.is_redirect:
-            continue_loop = True
-            prepd_reqst = responses.next
+        continue_loop = responses.is_redirect
+        prepd_reqst = responses.next
 
     # Initialize counter to process request/response chain
     req_resp_idx = 0
