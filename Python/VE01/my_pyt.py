@@ -81,15 +81,6 @@ def run_request(request_compl_dict):
                                     body_form_param_meta_parser)
     body_form_params_string = urlencode(body_form_params)
 
-    print('')
-    print('***')
-    print(repr(body_json_params))
-    print(body_json_params_string + ';'
-            + body_form_params_string + ';'
-            + body_xml_params_string)
-    print('***')
-    print('')
-
     # Prepare final body (multi-part if needed)
     num_bodies = (0 if body_form_params_string == '' else 1) +\
                     (0 if body_json_params_string == '' else 1) +\
