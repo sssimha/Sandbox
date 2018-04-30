@@ -12,7 +12,6 @@
         <Replace name="    " />
     </FindHistory>
     <History nbMaxFile="10" inSubMenu="no" customLength="-1">
-        <File filename="C:\Sandbox\Python\VE01\Lib\site-packages\Brotli-1.0.4.dist-info\RECORD" />
         <File filename="C:\Sandbox\Python\VE01\Lib\site-packages\Brotli-1.0.4.dist-info\top_level.txt" />
         <File filename="C:\Sandbox\Python\VE01\Lib\site-packages\Brotli-1.0.4.dist-info\WHEEL" />
         <File filename="C:\Sandbox\Python\VE01\Lib\site-packages\brotli.py" />
@@ -22,6 +21,7 @@
         <File filename="C:\Sandbox\Python\VE01\Scripts\pip.exe" />
         <File filename="C:\Sandbox\Python\VE01\__pycache__\test1.cpython-36.pyc" />
         <File filename="C:\Sandbox\Python\VE01\Scripts\activate" />
+        <File filename="C:\Sandbox\Python\VE01\my_pyt.py" />
     </History>
     <GUIConfigs>
         <GUIConfig name="ToolBar" visible="yes">standard</GUIConfig>
@@ -65,17 +65,19 @@
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" disableAdvancedScrolling="no" wrapSymbolShow="show" Wrap="no" borderEdge="yes" edge="no" edgeNbColumn="80" zoom="0" zoom2="0" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
         <GUIConfig name="DockingManager" leftWidth="355" rightWidth="200" topHeight="200" bottomHeight="167">
+            <FloatingWindow cont="4" x="-877" y="222" width="-572" height="538" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44085" curr="0" prev="-1" isVisible="yes" />
+            <PluginDlg pluginName="NppExec.dll" id="-1" curr="3" prev="-1" isVisible="no" />
+            <PluginDlg pluginName="Python Script" id="-1" curr="4" prev="2" isVisible="no" />
             <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
-            <PluginDlg pluginName="NppExec.dll" id="-1" curr="3" prev="-1" isVisible="yes" />
-            <PluginDlg pluginName="Python Script" id="-1" curr="3" prev="-1" isVisible="no" />
             <PluginDlg pluginName="NppExec.dll" id="2" curr="3" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44080" curr="1" prev="-1" isVisible="no" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="44084" curr="1" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="0" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="4" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
     <ProjectPanels>
@@ -83,7 +85,7 @@
         <ProjectPanel id="1" workSpaceFile="" />
         <ProjectPanel id="2" workSpaceFile="" />
     </ProjectPanels>
-    <FileBrowser latestSelectedItem="C:\Sandbox\.gitattributes">
+    <FileBrowser latestSelectedItem="C:\Sandbox\Python\VE01\my_pyt.py">
         <root foldername="C:\Sandbox" />
     </FileBrowser>
 </NotepadPlus>

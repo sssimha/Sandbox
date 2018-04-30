@@ -1,8 +1,6 @@
 <NotepadPlus>
     <Session activeView="0">
-        <mainView activeIndex="0">
-            <File firstVisibleLine="0" xOffset="0" scrollWidth="140" startPos="20" endPos="20" selMode="0" lang="Normal Text" encoding="-1" filename="C:\Sandbox\new 1.txt" backupFilePath="" originalFileLastModifTimestamp="1524591641" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
-        </mainView>
+        <mainView activeIndex="0" />
         <subView activeIndex="0" />
     </Session>
 </NotepadPlus>

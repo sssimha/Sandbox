@@ -110,8 +110,11 @@ def run_request(request_compl_dict):
         start_time = dt1.utcnow()
         responses = s.send(prepd_reqst, allow_redirects=False)
         end_time = dt1.utcnow()
+        # Append request, response tuple to list
         req_resp_list.append((prepd_reqst, responses))
+        # Append the appropriate start and end time tuple into the list
         req_ersp_timelog.append([start_time, end_time])
+        # Flags to end/continue loop
         continue_loop = responses.is_redirect
         prepd_reqst = responses.next
 
@@ -200,7 +203,7 @@ def strip_vars(param_compl_dict, meta_passed_only=True, meta_parser=None):
 
     def basic_meta_parser(m):
         return m['enabled']
-    if (meta_parser is None):
+    if (meta_parser is None) or (not callable(meta_parser)):
         meta_parser = basic_meta_parser
     for key in param_compl_dict:
         if (meta_parser(param_compl_dict[key][1]['_meta'])
