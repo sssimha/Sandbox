@@ -32,7 +32,7 @@ def try_it(i):
     print('this is the %dth attempt', i)
 
 
-def run_request(request_compl_dict):
+def run_request(request_compl_dict, print_response_always=False):
     '''Run a request'''
     # Define session
     s = req.Session()
@@ -121,80 +121,117 @@ def run_request(request_compl_dict):
     # Initialize counter to process request/response chain
     req_resp_idx = 0
 
+    # Loop to iterate over each request, response pair and print the output
     for (reqst, resp) in req_resp_list:
         # Separate out multiple requests
         if req_resp_idx > 0:
             print('')
         p1 = pr.urlparse(reqst.url)
+        # Generate first line of resquest with the method, HTTP version and
+        # the resource being sought
         line1_txt = reqst.method + ' ' + p1.path + \
                 ('' if p1.params == '' else ';' + p1.params) + \
                 ('' if p1.query == '' else '?' + p1.query) + \
                 ('' if p1.fragment == '' else '#' + p1.fragment) + \
                 ' HTTP/1.1'
+        # Generate second line of request with Host name
         line2_txt = 'HOST: ' + ((p1.scheme+':') if p1.scheme != '' else '') + \
                         '//' + p1.netloc
+        # Determine if lines need to be split
         line1_lim = 66 if len(line1_txt) > 66 else len(line1_txt)
         line2_lim = 66 if len(line2_txt) > 66 else len(line2_txt)
 
+        # Start printing request details
+        # Request send time
         print(strftime(req_ersp_timelog[req_resp_idx][0],
                 "> %Y-%m-%d %H:%M:%S.%f GMT"))
 
+        # Print line 1: Method, resource, HTTP version
         print('> ' + '\n>   [contd.] '.join(
             [line1_txt[i:i+line1_lim] for i in range(0,
                     len(line1_txt), line1_lim)]))
+        # Print line 2: Hostname
         print('> ' + '\n>   [contd.] '.join(
             [line2_txt[i:i+line2_lim] for i in range(0,
                     len(line2_txt), line2_lim)]))
 
+        # Print Headers
         for h in reqst.headers:
+            # Header output is generated as a line
             hline_txt = h + ': ' + reqst.headers[h]
+            # Determine if lines need to be split
             hline_lim = 66 if len(hline_txt) > 66 else len(hline_txt)
+            # Print Header
             print('> ' + '\n>   [contd.] '.join(
                 [hline_txt[i:i+hline_lim] for i in range(0,
                     len(hline_txt), hline_lim)]))
+        # Print separator
         print('> ')
+        # Generate body lines as ascii text string
         body_lines = reqst.body.decode('ascii') if \
                     type(reqst.body) == bytes else str(reqst.body)
+        # Split body by line into a list
         body_line_split = body_lines.replace('\r\n', '\n').split('\n')
+        # Print each body line
         for body_txt in body_line_split:
+            # Determine if body line needw to be split
             body_lim = 66 if len(body_txt) > 66 else len(body_txt)
             print('> ' + '\n>   [contd.] '.join(
                 [body_txt[i:i+body_lim]
                 for i in range(0, len(body_txt), body_lim)]))
 
+        # Start preparing response details
+        # Determine response HTTP version, status code and text (line 1)
         line3_txt = 'HTTP/' + repr(resp.raw.version/10) +\
             ' ' + str(resp.status_code) + ' ' + resp.reason
+        # Determine if line 1 of response needs to be split
         line3_lim = 66 if len(line3_txt) > 66 else len(line3_txt)
 
+        # Print a separator between Request and response
         print('')
+        # Print response recd & processed time
         print(strftime(req_ersp_timelog[req_resp_idx][1],
                 "< %Y-%m-%d %H:%M:%S.%f GMT"))
+        # Print line 1 of response
         print('< ' + '\n<   [contd.] '.join(
             [line3_txt[i:i+line3_lim]
             for i in range(0, len(line3_txt), line3_lim)]))
+        # Print response headers
         for h in resp.headers:
+            # Prepare response header type and content
             hline_txt = h + ': ' + resp.headers[h]
+            # Determine if response header line needs to be split
             hline_lim = 66 if len(hline_txt) > 66 else len(hline_txt)
             print('< ' + '\n<   [contd.] '.join(
                 [hline_txt[i:i+hline_lim] for i in range(0,
                     len(hline_txt), hline_lim)]))
 
-        if not resp.ok:
+        # Only print response body if error OR print_response_always is True
+        if not resp.ok or print_response_always:
+            # Print blank line before starting body
             print('<')
+            # Read body into ascii string
             body_lines = resp.text.decode('ascii') if \
                         type(resp.text) == bytes else str(resp.text)
+            # Assign 'None' text to body text. Null response check
             body_lines = 'None' if len(body_lines) == 0 else body_lines
+            # Split body into lines as a list of strings
             body_line_split = body_lines.replace('\r\n', '\n').split('\n')
             for body_txt in body_line_split:
+                # Secondary NULL response check. Only print body if particular
+                # line is not zero-length
                 if len(body_txt) > 0:
+                    # Determine if body line needs to be split
                     body_lim = 66 if len(body_txt) > 66 else len(body_txt)
                     print('< ' + '\n<   [contd.] '.join(
                         [body_txt[i:i+body_lim]
                         for i in range(0, len(body_txt), body_lim)]))
 
+        # Iterate over next request, response pair
         req_resp_idx = req_resp_idx + 1
 
     print('')
+    # Return the last final response
     return responses
 
 

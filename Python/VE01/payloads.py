@@ -248,3 +248,43 @@ TRIPADVISOR_DOT_COM = {  # PAYLOAD NAME: Google Request
         },
     }
 }
+
+# SS API Key: oo009afn36yctgo226oly5o0xi
+PKG_SMSH_GET_SHEETS = {  # PAYLOAD NAME: Give_a_name_HERE
+    # Define Host here
+    'host': 'https://api.smartsheet.com',
+    # Define endpoint here
+    'endpoint': '/2.0/sheets',
+    # Define Headers Here
+    'method': 'GET',
+    # Define Headers Here as a dict of header names to array of
+    #  value at 0th position and its meta-extensions
+    'hdrs': {
+        'Authorization': [
+            'Bearer oo009afn36yctgo226oly5o0xi',
+            {
+                '_meta': {
+                    'enabled': True
+                }
+            }
+        ]
+    },
+    # Define Body here if custom body
+    'body': '',
+    # Other payload settings
+    '_meta': {
+        # Define parameters as a dict of param names to array of
+        #  value at its 0th position and its meta-extensions
+        'params': {
+            'refresh_token': [
+                '',
+                {
+                    '_meta': {
+                        'enabled': False,
+                        'param_loc': ParamLocation.Param_Nowhere
+                    }
+                }
+            ]
+        },
+    }
+}
