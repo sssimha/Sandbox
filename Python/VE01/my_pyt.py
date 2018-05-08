@@ -33,7 +33,22 @@ def try_it(i):
 
 
 def run_request(request_compl_dict, print_response_always=False):
-    '''Run a request'''
+    '''
+Run a request
+=============
+Processes a request dictionary and returns the result as a `requests.Response`
+object.
+
+_Parameters_
+------------
+
+1.`request_compl_dict` (__required__): A complex request dict as defined in
+payloads.py
+2.`print_response_always` (_optional_): A boolean value that determines
+whether or not the response body is printed into the default output buffer
+(typically the console). If set to `False`, the response body
+(`response.text`) is _only printed_ _if_ the response code is __not OK__.
+    '''
     # Define session
     s = req.Session()
 
