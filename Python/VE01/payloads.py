@@ -2,7 +2,6 @@
 Module DOCSTRING: Helps define Payloads
 '''
 import payload_def
-ParamLocation = payload_def.ParamLocation
 
 PKG_TEMPLATE = {  # PAYLOAD NAME: Give_a_name_HERE
     # Define Host here
@@ -35,7 +34,7 @@ PKG_TEMPLATE = {  # PAYLOAD NAME: Give_a_name_HERE
                 {
                     '_meta': {
                         'enabled': True,
-                        'param_loc': ParamLocation.Param_Nowhere
+                        'param_loc': payload_def.ParamLocation.Param_Nowhere
                     }
                 }
             ]
@@ -83,7 +82,7 @@ PKG_GOOGLE_DEV_AUTH = {  # PAYLOAD NAME: Device Auth Request for Google Cal
                 {
                     '_meta': {
                         'enabled': True,
-                        'param_loc': ParamLocation.Param_Body_Form
+                        'param_loc': payload_def.ParamLocation.Param_Body_Form
                     }
                 }
             ],
@@ -92,7 +91,7 @@ PKG_GOOGLE_DEV_AUTH = {  # PAYLOAD NAME: Device Auth Request for Google Cal
                 {
                     '_meta': {
                         'enabled': True,
-                        'param_loc': ParamLocation.Param_Body_Form
+                        'param_loc': payload_def.ParamLocation.Param_Body_Form
                     }
                 }
             ]
@@ -161,7 +160,7 @@ GOOGLE_DEV_AUTH_CHECK = {  # PAYLOAD NAME: Give_a_name_HERE
                 {
                     '_meta': {
                         'enabled': True,
-                        'param_loc': ParamLocation.Param_Nowhere
+                        'param_loc': payload_def.ParamLocation.Param_Nowhere
                     }
                 }
             ]
@@ -281,7 +280,7 @@ PKG_SMSH_GET_SHEETS = {  # PAYLOAD NAME: Give_a_name_HERE
                 {
                     '_meta': {
                         'enabled': False,
-                        'param_loc': ParamLocation.Param_Nowhere
+                        'param_loc': payload_def.ParamLocation.Param_Nowhere
                     }
                 }
             ]

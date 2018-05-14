@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 *******************************************************************************
 Module DOCSTRING: Tries to run a delayed action
@@ -10,22 +11,29 @@ import urllib.parse as pr
 import json
 import dicttoxml
 import requests as req
+import payload_def
 
-from payload_def import ParamLocation
+append_root = True
+
+import basic_ops
 
 urlencode = urllib.parse.urlencode
 dt1 = dt.datetime
 strftime = dt1.strftime
-PARAMS = {}
+PARAMS = {'a': 'b'}
 
 
 def main():
-    """ Tries to run a delayed action """
+    """ Tries to run a delayed action"""
     # global pkg
     for i in range(1, 5):
         time.sleep(0.6)
         try_it(i)
     # print(type(pkg))
+
+
+def get_gl():
+    return globals()
 
 
 def try_it(i):
@@ -265,20 +273,20 @@ def strip_vars(param_compl_dict, meta_passed_only=True, meta_parser=None):
 
 
 def url_param_meta_parser(m):
-    return ((m['param_loc'] == ParamLocation.Param_Url_Form)
+    return ((m['param_loc'] == payload_def.ParamLocation.Param_Url_Form)
                  and m['enabled'])
 
 
 def body_form_param_meta_parser(m):
-    return ((m['param_loc'] == ParamLocation.Param_Body_Form)
+    return ((m['param_loc'] == payload_def.ParamLocation.Param_Body_Form)
                 and m['enabled'])
 
 
 def body_json_param_meta_parser(m):
-    return ((m['param_loc'] == ParamLocation.Param_Body_Json)
+    return ((m['param_loc'] == payload_def.ParamLocation.Param_Body_Json)
                 and m['enabled'])
 
 
 def body_xml_param_meta_parser(m):
-    return ((m['param_loc'] == ParamLocation.Param_Body_Xml)
+    return ((m['param_loc'] == payload_def.ParamLocation.Param_Body_Xml)
                 and m['enabled'])
