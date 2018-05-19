@@ -8,6 +8,10 @@ import pip
 import pip._internal
 import sys
 
+calling_stack = None
+calling_stack_globals = {}
+calling_stack_ob_name = ''
+
 print('')
 print("Basic Ops Imported!")
 
@@ -20,14 +24,29 @@ finally:
     str_stack = 'basic_ops code called'
     frm_level = 0
     frm = sys._getframe()
+    calling_frame_num = 0
+    calling_frame_found = False
     while frm is not None:
         str_stack = str_stack.replace('\n', '\n ')
         str_stack = repr(frm_level) + ': "' + frm.f_code.co_name + '" - '\
                     + repr(frm.f_code) + '\n\u2514' + str_stack
+        if not calling_frame_found:
+            if frm.f_code.co_name == '_find_and_load':
+                calling_frame_num = frm_level + 1
+                calling_frame_found = True
         frm = frm.f_back
         frm_level = frm_level + 1
     print(str_stack)
     print('======')
+
+    calling_stack = sys._getframe(calling_frame_num)
+    calling_stack_globals = sys._getframe(calling_frame_num).f_globals
+    calling_stack_ob_name = sys._getframe(calling_frame_num).f_code.co_name
+
+    for v in sys._getframe(calling_frame_num).f_globals.keys():
+        print(v + ' '
+        + ('***' if v == sys._getframe(calling_frame_num).f_code.co_name
+            else ''))
 
 __var1 = 'test'
 __imported_mods = {}

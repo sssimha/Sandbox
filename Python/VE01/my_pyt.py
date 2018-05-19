@@ -15,12 +15,21 @@ import payload_def
 
 append_root = True
 
-import basic_ops
+# import basic_ops
 
 urlencode = urllib.parse.urlencode
 dt1 = dt.datetime
 strftime = dt1.strftime
 PARAMS = {'a': 'b'}
+
+
+class f:
+    def __init__(self, mod):
+        self.impmod = __import__(mod)
+
+
+def f_imp(mod):
+    return __import__(mod)
 
 
 def main():
