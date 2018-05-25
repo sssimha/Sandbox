@@ -1,0 +1,85 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <button id="link-button">Link TD Account to Plaid</button>
+        <div id="result" style="font-family: Consolas; font-size: 60%;"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+        <script type="text/javascript">
+        function update(s){
+            var d = new Date();
+            document.getElementById('result').innerHTML = document.getElementById('result').innerHTML + '<p>' + d.toLocaleString() + ': ' + JSON.stringify(s, null, '&nbsp').replace(/\n/g,'<br>') + '</p>';
+        }
+        (function($) {
+          var handler = Plaid.create({
+            clientName: 'CSHome TransTrack',
+            env: 'development',
+            apiVersion: 'v2',
+            // Replace with your public_key from the Dashboard
+            key: 'bcd95f4278146fb822db35d842425b',
+            product: ['transactions'],
+            // Optional, use webhooks to get transaction and error updates
+            // webhook: 'https://requestb.in',
+            onLoad: function() {
+              res = {
+                  function: 'onLoad'
+              };
+              update(res);// Optional, called when Link loads
+            },
+            onSuccess: function(public_token, metadata) {
+              // Send the public_token to your app server.
+              // The metadata object contains info about the institution the
+              // user selected and the account ID, if the Account Select view
+              // is enabled.
+              res = {
+                  function: 'onSuccess',
+                  pub_token: public_token,
+                  meta: metadata
+              };
+              update(res);
+              // $.post('/get_access_token', {
+              //   public_token: public_token,
+              // });
+            },
+            onExit: function(err, metadata) {
+              // The user exited the Link flow.
+              res = {
+                  function: 'onExit',
+                  error: err,
+                  meta: metadata
+              };
+              update(res);
+              // if (err != null) {
+              //   // The user encountered a Plaid API error prior to exiting.
+              // }
+              // metadata contains information about the institution
+              // that the user selected and the most recent API request IDs.
+              // Storing this information can be helpful for support.
+            },
+            onEvent: function(eventName, metadata) {
+                res = {
+                    function: 'onEvent',
+                    event_name: eventName,
+                    meta: metadata
+                };
+                update(res);
+              // Optionally capture Link flow events, streamed through
+              // this callback as your users connect an Item to Plaid.
+              // For example:
+              // eventName = "TRANSITION_VIEW"
+              // metadata  = {
+              //   link_session_id: "123-abc",
+              //   mfa_type:        "questions",
+              //   timestamp:       "2017-09-14T14:42:19.350Z",
+              //   view_name:       "MFA",
+              // }
+            }
+          });
+
+          $('#link-button').on('click', function(e) {
+            handler.open();
+          });
+        })(jQuery);
+        </script>
+    </bod

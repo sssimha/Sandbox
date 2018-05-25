@@ -1,0 +1,466 @@
+5/23/2018, 11:23:02 PM: {
+ "function": "onLoad"
+}
+
+5/23/2018, 11:23:03 PM: {
+ "function": "onEvent",
+ "event_name": "OPEN",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:03.809Z"
+ }
+}
+
+5/23/2018, 11:23:06 PM: {
+ "function": "onEvent",
+ "event_name": "SEARCH_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": "td c",
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:06.673Z"
+ }
+}
+
+5/23/2018, 11:23:07 PM: {
+ "function": "onEvent",
+ "event_name": "SEARCH_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": "td ca",
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:07.616Z"
+ }
+}
+
+5/23/2018, 11:23:08 PM: {
+ "function": "onEvent",
+ "event_name": "SEARCH_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": "td canda",
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:08.272Z"
+ }
+}
+
+5/23/2018, 11:23:10 PM: {
+ "function": "onEvent",
+ "event_name": "SELECT_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:10.192Z"
+ }
+}
+
+5/23/2018, 11:23:10 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": "CREDENTIAL",
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:10.295Z"
+ }
+}
+
+5/23/2018, 11:23:20 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": "LOADING",
+  "request_id": null,
+  "timestamp": "2018-05-24T03:23:20.618Z"
+ }
+}
+
+5/23/2018, 11:23:51 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": "CONNECTED",
+  "request_id": "SxQ7a",
+  "timestamp": "2018-05-24T03:23:51.902Z"
+ }
+}
+
+5/23/2018, 11:23:55 PM: {
+ "function": "onEvent",
+ "event_name": "HANDOFF",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": "SxQ7a",
+  "timestamp": "2018-05-24T03:23:55.899Z"
+ }
+}
+
+5/23/2018, 11:23:56 PM: {
+ "function": "onSuccess",
+ "pub_token": "public-development-3f4acde8-5e39-4fb0-91bd-bc322136e1db",
+ "meta": {
+  "institution": {
+   "name": "TD Canada Trust",
+   "institution_id": "ins_42"
+  },
+  "account": {
+   "id": null,
+   "name": null,
+   "type": null,
+   "subtype": null,
+   "mask": null
+  },
+  "account_id": null,
+  "accounts": [],
+  "link_session_id": "1d02edfd-2b92-4bc6-bd55-676f3feaf471",
+  "public_token": "public-development-3f4acde8-5e39-4fb0-91bd-bc322136e1db"
+ }
+}
+
+// CS Account
+5/25/2018, 2:00:39 PM: {
+ "function": "onLoad"
+}
+
+5/25/2018, 2:00:45 PM: {
+ "function": "onEvent",
+ "event_name": "OPEN",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-25T18:00:45.631Z"
+ }
+}
+
+5/25/2018, 2:00:48 PM: {
+ "function": "onEvent",
+ "event_name": "SELECT_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-25T18:00:48.113Z"
+ }
+}
+
+5/25/2018, 2:00:48 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": "CREDENTIAL",
+  "request_id": null,
+  "timestamp": "2018-05-25T18:00:48.150Z"
+ }
+}
+
+5/25/2018, 2:00:57 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": "LOADING",
+  "request_id": null,
+  "timestamp": "2018-05-25T18:00:57.022Z"
+ }
+}
+
+5/25/2018, 2:01:00 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": "CONNECTED",
+  "request_id": "8EFbO",
+  "timestamp": "2018-05-25T18:01:00.323Z"
+ }
+}
+
+5/25/2018, 2:01:02 PM: {
+ "function": "onEvent",
+ "event_name": "HANDOFF",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_42",
+  "institution_name": "TD Canada Trust",
+  "institution_search_query": null,
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": "8EFbO",
+  "timestamp": "2018-05-25T18:01:02.014Z"
+ }
+}
+
+5/25/2018, 2:01:02 PM: {
+ "function": "onSuccess",
+ "pub_token": "public-development-3435407d-ae57-42e9-9f11-cb0b6bb914b0",
+ "meta": {
+  "institution": {
+   "name": "TD Canada Trust",
+   "institution_id": "ins_42"
+  },
+  "account": {
+   "id": null,
+   "name": null,
+   "type": null,
+   "subtype": null,
+   "mask": null
+  },
+  "account_id": null,
+  "accounts": [],
+  "link_session_id": "ce43b884-9e1b-47d3-95d2-f6896465216e",
+  "public_token": "public-development-3435407d-ae57-42e9-9f11-cb0b6bb914b0"
+ }
+}
+
+// Chase
+5/25/2018, 2:02:58 PM: {
+ "function": "onLoad"
+}
+
+5/25/2018, 2:03:00 PM: {
+ "function": "onEvent",
+ "event_name": "OPEN",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-25T18:03:00.607Z"
+ }
+}
+
+5/25/2018, 2:03:02 PM: {
+ "function": "onEvent",
+ "event_name": "SELECT_INSTITUTION",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_3",
+  "institution_name": "Chase",
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": null,
+  "timestamp": "2018-05-25T18:03:02.423Z"
+ }
+}
+
+5/25/2018, 2:03:02 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_3",
+  "institution_name": "Chase",
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": "CREDENTIAL",
+  "request_id": null,
+  "timestamp": "2018-05-25T18:03:02.453Z"
+ }
+}
+
+5/25/2018, 2:03:10 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_3",
+  "institution_name": "Chase",
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": "LOADING",
+  "request_id": null,
+  "timestamp": "2018-05-25T18:03:10.629Z"
+ }
+}
+
+5/25/2018, 2:03:13 PM: {
+ "function": "onEvent",
+ "event_name": "TRANSITION_VIEW",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_3",
+  "institution_name": "Chase",
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": "CONNECTED",
+  "request_id": "EbU4m",
+  "timestamp": "2018-05-25T18:03:13.818Z"
+ }
+}
+
+5/25/2018, 2:03:17 PM: {
+ "function": "onEvent",
+ "event_name": "HANDOFF",
+ "meta": {
+  "error_code": null,
+  "error_message": null,
+  "error_type": null,
+  "exit_status": null,
+  "institution_id": "ins_3",
+  "institution_name": "Chase",
+  "institution_search_query": null,
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "mfa_type": null,
+  "view_name": null,
+  "request_id": "EbU4m",
+  "timestamp": "2018-05-25T18:03:17.061Z"
+ }
+}
+
+5/25/2018, 2:03:17 PM: {
+ "function": "onSuccess",
+ "pub_token": "public-development-8596aaaf-1359-45eb-92da-c276bd52931e",
+ "meta": {
+  "institution": {
+   "name": "Chase",
+   "institution_id": "ins_3"
+  },
+  "account": {
+   "id": null,
+   "name": null,
+   "type": null,
+   "subtype": null,
+   "mask": null
+  },
+  "account_id": null,
+  "accounts": [],
+  "link_session_id": "50380d1e-f896-45fa-925c-7af390914532",
+  "public_token": "public-development-8596aaaf-1359-45eb-92da-c276bd52931e"
+ }
+}
